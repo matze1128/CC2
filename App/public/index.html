@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textübersetzer</title>
+</head>
+<body>
+    <h2>Textübersetzer mit DeepL</h2>
+    <input type="text" id="textToTranslate" placeholder="Text zum Übersetzen">
+    <select id="targetLanguage">
+        <option value="DE">Deutsch</option>
+        <option value="EN">Englisch</option>
+        <option value="FR">Französisch</option>
+        <!-- Fügen Sie weitere unterstützte Sprachen gemäß der DeepL-Dokumentation hinzu -->
+    </select>
+    <button onclick="translateText()">Übersetzen</button>
+    <p>Übersetzung: <span id="translationResult"></span></p>
+    <p>Erkannte Sprache: <span id="detectedLanguage"></span></p>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
